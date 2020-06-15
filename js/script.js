@@ -28,10 +28,13 @@ console.log(prezzoIntero);
 
 if (eta < 18 ){
   preventivo = prezzoIntero * 0.8;
+  document.getElementById("sconto").innerHTML = eta + " anni ha diritto adu uno sconto riservato ai minorenni";
 } else if (eta >= 65){
   preventivo = prezzoIntero * 0.6;
+  document.getElementById("sconto").innerHTML = eta + " anni ha diritto adu uno sconto riservato all'utenza senior";
 } else{
   preventivo = prezzoIntero;
+  document.getElementById("sconto").innerHTML = eta + " anni purtroppo non ha diritto a riduzioni";
 }
 
 console.log(preventivo);
