@@ -50,3 +50,21 @@ console.log(preventivoFixed);
 // Stampo il preventivo
 
 document.getElementById("preventivo").innerHTML = preventivoFixed;
+
+// bonus
+
+// Utilizzo la i metodi di data per dare una scadenza all'offerta
+
+var d = new Date();
+
+// creo una stringa con la data di validità dell'offerta
+
+var minutiOfferta = d.getMinutes() + 1;
+
+var validitaOfferta = d.getHours() + ":" + minutiOfferta + " del " + d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear();
+
+console.log(validitaOfferta);
+
+// stampo validità offerta
+
+document.getElementById("validita").innerHTML = validitaOfferta;

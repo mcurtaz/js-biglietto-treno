@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 80%;
+  background-color: #ccc;
+  margin: 25px auto 0;
+  min-height: 400px;
+  padding: 20px;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container p{
+  font-size: 18px;
+  margin: 15px;
+}
+
+.container p:last-child{
+  font-size: 14px;
+}
