@@ -34,8 +34,16 @@ if (eta < 18 ){
   preventivo = prezzoIntero;
 }
 
-console.log(preventivo)
+console.log(preventivo);
+
+// arrotondo il preventivo a due cifre decimali fisse
+
+preventivoFixed = preventivo.toFixed(2);
+
+console.log(preventivoFixed);
+
+
 
 // Stampo il preventivo
 
-document.getElementById("preventivo").innerHTML = preventivo;
+document.getElementById("preventivo").innerHTML = preventivoFixed;
